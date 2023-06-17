@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1A1A1B;
+}
+header{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    height: 60px;
+    background-color: rgb(68, 66, 66);
+    border-top: #343536 solid 1px ;
+    border-bottom: #343536 solid 1px ;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header input{
+    background-color: rgb(39, 39, 41);
+    border-radius: 10px;
+    border: solid 1px rgb(52, 53, 54);
+    height: 40px;
+    width: 650px;
+}
+
+header button{
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 10px
+}
+
+.orange{
+    background-color: orangered;
+    color: whitesmoke;
+    border: none;
+
+}
+
+.app{
+    border: none;
+    background-color: whitesmoke;
+    color: #1A1A1B;
+}
+
+main{
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu{
+width: 10%;
+position: fixed;
+background-color: aliceblue;
+display: flex;
+flex-direction: column;
+height:1000px;
+}
+
+.gluwna{
+width: 90%;
+}
