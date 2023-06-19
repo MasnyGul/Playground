@@ -19,6 +19,7 @@ header{
     justify-content: space-around;
 }
 
+
 header input{
     background-color: rgb(39, 39, 41);
     border-radius: 10px;
@@ -26,6 +27,7 @@ header input{
     height: 40px;
     width: 650px;
 }
+
 
 header button{
     width: 80px;
