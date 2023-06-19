@@ -1,3 +1,7 @@
+:root{
+    --bg:#1A1A1B;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -5,14 +9,14 @@
 }
 
 body{
-    background-color: #1A1A1B;
+    background-color:#030303;
 }
 header{
     display: flex;
     width: 100%;
     position: fixed;
-    height: 60px;
-    background-color: rgb(68, 66, 66);
+    height: 50px;
+    background-color: var(--bg);
     border-top: #343536 solid 1px ;
     border-bottom: #343536 solid 1px ;
     align-items: center;
@@ -22,21 +26,36 @@ header{
 
 header input{
     background-color: rgb(39, 39, 41);
-    border-radius: 10px;
+    border-radius: 50px 50px;
     border: solid 1px rgb(52, 53, 54);
     height: 40px;
     width: 650px;
 }
 
+.bar{
+    height: 40px;
+    width: 650px;
+}
+
+header input:focus{
+    position: absolute;
+    top: 12px;
+    border-radius: 10px;
+    border: solid 1px rgb(52, 53, 54);
+    height: 80px;
+    width: 650px;
+}
+
 
 header button{
-    width: 80px;
-    height: 30px;
+    width: 120px;
+    height: 33px;
     font-size: 15px;
     border-radius: 10px
 }
 
 .orange{
+    border-radius: 50px;
     background-color: orangered;
     color: whitesmoke;
     border: none;
@@ -44,21 +63,22 @@ header button{
 }
 
 .app{
+    border-radius: 50px;
     border: none;
     background-color: whitesmoke;
-    color: #1A1A1B;
+    color:#030303 ;
 }
 
 main{
-    padding-top: 60px;
+    padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .menu{
-width: 10%;
+width: 15%;
 position: fixed;
-background-color: aliceblue;
+background-color: var(--bg);
 display: flex;
 flex-direction: column;
 height:1000px;
