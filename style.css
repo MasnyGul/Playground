@@ -9,6 +9,7 @@
 }
 
 body{
+    font-family: Verdana;
     background-color:#030303;
 }
 header{
@@ -23,28 +24,33 @@ header{
     justify-content: space-around;
 }
 
-
 header input{
+    background-color: transparent;
+    border: none;
+    height: 40px;
+    width: 500px;
+}
+
+
+.bar{
+    height: 40px;
+    width: 650px;
+    display: flex;
+    align-items: center;
     background-color: rgb(39, 39, 41);
     border-radius: 50px 50px;
     border: solid 1px rgb(52, 53, 54);
     height: 40px;
     width: 650px;
 }
-
-.bar{
-    height: 40px;
-    width: 650px;
+.bar:hover{
+    border-color: snow;
 }
 
-header input:focus{
-    position: absolute;
-    top: 12px;
-    border-radius: 10px;
-    border: solid 1px rgb(52, 53, 54);
-    height: 80px;
-    width: 650px;
+header input:active ~ .bar{
+    background: red;
 }
+
 
 
 header button{
@@ -81,9 +87,28 @@ position: fixed;
 background-color: var(--bg);
 display: flex;
 flex-direction: column;
-height:1000px;
+height:calc(100vh - 40px);
 }
 
 .gluwna{
 width: 90%;
+}
+.join{
+    position: absolute;
+    bottom:2px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.join p{
+    color: rgb(218, 212, 212);
+}
+
+.join button{
+    width: 100px;
+    height: 30px;
 }
