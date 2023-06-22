@@ -18,18 +18,29 @@ header{
     position: fixed;
     height: 50px;
     background-color: var(--bg);
-    border-top: #343536 solid 1px ;
     border-bottom: #343536 solid 1px ;
     align-items: center;
     justify-content: space-around;
 }
 
 header input{
+    margin-left: 10px;
     background-color: transparent;
     border: none;
     height: 40px;
-    width: 500px;
+    width: 100%;
+    outline: none;
+    font-size: 15px;
+    color: #818384;
 }
+
+
+.bar img{
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+}
+
 
 
 .bar{
@@ -47,9 +58,7 @@ header input{
     border-color: snow;
 }
 
-header input:active ~ .bar{
-    background: red;
-}
+
 
 
 
@@ -71,8 +80,8 @@ header button{
 .app{
     border-radius: 50px;
     border: none;
-    background-color: whitesmoke;
-    color:#030303 ;
+    background-color: #D7DADC;;
+    color:#0f1a1c; ;
 }
 
 main{
@@ -95,20 +104,24 @@ width: 90%;
 }
 .join{
     position: absolute;
-    bottom:2px;
-    display: grid;
+    bottom:0;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: auto;
     padding: 30px;
+    gap: 20px;
 }
 
 .join p{
     color: rgb(218, 212, 212);
+    font-size: 15px;
 }
 
 .join button{
-    width: 100px;
-    height: 30px;
+    width: 100%;
+    height: 40px;
+    font-size: 17px;
 }
