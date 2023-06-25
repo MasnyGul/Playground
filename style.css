@@ -54,15 +54,12 @@ header input{
     height: 40px;
     width: 650px;
 }
+
+
+.bar:has(input:focus),
 .bar:hover{
     border-color: snow;
 }
-
-
-input:focus{
-    background-color: red;
-}
-
 
 header button{
     width: 120px;
