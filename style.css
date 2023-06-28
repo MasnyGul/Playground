@@ -73,6 +73,7 @@ header button{
     background-color: orangered;
     color: whitesmoke;
     border: none;
+    cursor: pointer;
 
 }
 
@@ -81,12 +82,11 @@ header button{
     border: none;
     background-color: #D7DADC;;
     color:#0f1a1c; ;
+    cursor: pointer;
 }
 
 main{
     padding-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .menu{
@@ -99,8 +99,87 @@ height:calc(100vh - 40px);
 }
 
 .gluwna{
-width: 90%;
+float: right;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+width: 85%;
+height: auto;
 }
+
+.content{
+    padding-top: 30px;
+    width: 60%;
+    height: auto;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.content p{
+    color: #D7DADC;
+    font-size:15px;
+}
+
+
+.tren div{
+    width: 25%;
+    height: 200px;
+    border-radius: 15px;
+    cursor: pointer;
+    filter: grayscale(40%);
+    overflow: hidden;
+    transition: 0.5s;
+    position: relative;
+}
+
+.tren div:hover{
+    filter: grayscale(0%);
+}
+
+.tren{
+    gap: 10px;
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+
+.b p{
+    position: absolute;
+    bottom: -50px;
+    transition: 0.5s;
+    font-size: 20px;
+    text-shadow: black 5px 5px 5px;
+}
+
+.b:hover p{
+    bottom: 20px;
+}
+
+
+
+.one{
+background-image: url(Japan.jpg);
+background-size: cover;
+}
+.two{
+background-image: url(shark.jpg);
+background-size: cover;
+}
+.three{
+background-image: url(walkie-talkie.jpg);
+background-size: cover;
+}
+.four{
+background-image: url(washer.jpg);
+background-size: cover;
+}
+
+
+
+
+
 .join{
     position: absolute;
     bottom:0;
