@@ -21,6 +21,7 @@ header{
     border-bottom: #343536 solid 1px ;
     align-items: center;
     justify-content: space-between;
+    z-index: 2;
 }
 
 header input{
