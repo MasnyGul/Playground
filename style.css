@@ -236,9 +236,12 @@ background-size: cover;
     height: auto;
     padding: 30px;
     gap: 20px;
+    z-index: 1;
 }
 
 .join p{
+    border-top: 1px solid rgba(0,0,0,.2);
+    padding-top: 30px;
     color: rgb(218, 212, 212);
     font-size: 15px;
 }
@@ -335,11 +338,11 @@ flex-wrap: wrap;
 gap: 10px;
 }
 
-ul{
+ul.lista{
     margin-top: 15px;
     list-style: none;
 }
-a{
+ul a{
     font-size: 12px;
     text-decoration: none;
     color: rgb(218, 212, 212);
@@ -367,3 +370,105 @@ a{
 
 
 
+.sidenav > button{
+    background:transparent;
+    border: none;
+    cursor: pointer;
+    color:rgb(218, 212, 212) ;
+    display: flex;
+    padding-left: 20px;
+    align-items:center;
+    font-size: 15px;
+    padding:5px;
+}
+
+.sidenav > p{
+    color: #343536;
+    font-size: 10px;
+    margin: 20px;
+}
+
+button>img{
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+}
+
+
+.sidenav .dropdown-btn:not(.active)::after{
+    content:'';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    right: 20px;
+    border-top: rgb(218, 212, 212) 2px solid;
+    border-right: rgb(218, 212, 212) 2px solid;
+    transform: rotate(-45deg);
+    margin-top: 5px;
+}
+
+
+
+.sidenav .dropdown-btn.active::before{
+    transform: rotate(-225deg);
+    content:'';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    right: 20px;
+    border-top: rgb(218, 212, 212) 2px solid;
+    border-right: rgb(218, 212, 212) 2px solid;
+}
+
+
+.sidenav {
+    height: 75%;
+    width: 100%;
+    overflow-x: hidden;
+
+  }
+  
+
+  .sidenav a, .dropdown-btn {
+    position: relative;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+  }
+  
+
+  .main {
+    font-size: 15px; 
+
+  }
+  
+  .active {
+    color: white;
+  }
+  
+  .dropdown-container {
+    display: none;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,.2);;
+  }
+
+  .dropdown-container a{
+    margin-top: 10px;
+  }
+  
+  .nodec{
+    text-decoration: none;
+    color:#0f1a1c;;
+  }
