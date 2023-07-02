@@ -309,7 +309,7 @@ button>img{
     width: 100%;
 }
 
-.stop div:nth-child(1){
+.foot{
     width: 100%;
     border-radius:8px;
     height: 300px;
@@ -348,3 +348,22 @@ a{
 .lista a:hover{
     text-decoration: underline;
 }
+
+.sticky{
+    position: sticky;
+    top: 50px;
+}
+
+.back{
+    border-radius: 50px;
+    width: 7%;
+    height: 30px;
+    position: fixed;
+    bottom: 10px;
+    align-self: center;
+    color: #0f1a1c;
+    border: none;
+}
+
+
+
