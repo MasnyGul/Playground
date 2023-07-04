@@ -205,16 +205,23 @@ background-size: cover;
 
 .media div:nth-child(1){
     height: 70px;
+    display: flex;
 }
 
 
 
-.media div{
+.media>div{
     width: 100%;
     border-radius:8px;
     height: 300px;
     background-color:#1A1A1B;
     border: 1px solid #343536;
+}
+
+.media>div div{
+    width: 20%;
+    height: 50px;
+    background-color: red;
 }
 .stop{
     width: 30%;
